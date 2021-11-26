@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta a los Reyes Magos</title>
+</head> 
+<header>
+    <h1>Carta a los Reyes Magos de Oriente!!!</h1>
+<body>
+    <figure>
+        <img src="multimedia/Reyes Magos.jpg" width="300" height="150"  
+        >
+        <figcaption></figcaption>
+    </figure>
+    <h3>Rellena el formulario para poder recibir vuestro regalo de parte de los Reyes Magos!</h3> 
+    <form action="index.html" method="get">
+        <label for="fname"> Nombre:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname"> Apellidos:</label><br>
+        <input type="text" name="lname" id="lname" required><br><br>
+        <label for="dni">DNI:</label><br>
+        <select name="dni" id="dni" required>
+            <option value="NIF">NIF</option>
+            <option value="NIE">NIE</option>
+        </select>     
+        <input type="text" name="dni" id="dni" required><br><br>
+        <label for="mail">Correo electrónico:</label><br>
+        <input type="email" name="mail" id="mail" required><br><br>
+        <label for="location">Ubicación</label><br>
+        <select name="location" id="location" required>
+            <option value="Calle">Calle</option>
+            <option value="Avenida">Avenida</option>
+            <option value="Paseo">Paseo</option>
+            <option value="Plaza">Plaza</option>
+        </select>
+        <input type="text" name="location" id="location" placeholder="Nombre,número y piso" required><br><br>
+        <label for="birthday"> Fecha de nacimiento:</label><br>
+        <input type="date" name="birthday" id="birthday"><br><br>
+        <label for="sexo"> Sexo:</label>
+        <input type="radio" name="sexo" id="sexo">Hombre 
+        <input type="radio" name="sexo" id="sexo">Mujer
+        <input type="radio" name="sexo" id="sexo">Otro <br><br><br>
+        <label for="wish"> Escribe qué quieres que te triagna los Reyes Magos:</label><br><br>
+        <textarea name="wish" id="wish" cols="30" rows="10" required placeholder="Adelante, no te cortres,tus deseos pueden hacerse realidad gracias a los increíbles Reyes Magos :D"></textarea><br>
+        <label for="reset">Restablecer todos los datos?</label><br>
+        <input type="reset" name="reset" id="reset"><br>
+        <label for="send">O ya estás listo para:</label><br>
+        <input type="submit" name="send" id="send" value="Enviar">      
+    </form>     
+        
+</body>

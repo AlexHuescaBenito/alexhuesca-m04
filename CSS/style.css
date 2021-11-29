@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    color:grey;
+    font-weight: bold;
+    text-decoration: underline;
+}
+p {
+    font-style: oblique;
+}
+span{
+    color:#ff0000;
+}
+li{
+    list-style-type: upper-roman;
+}

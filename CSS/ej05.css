@@ -1,0 +1,17 @@
+h1{
+    background-color: black;
+
+}
+span{
+    color: white;
+}
+h2{
+    display: inline-block;
+    width: 49%;
+    background-color: gray;
+}
+li{
+    display: inline-block;
+    width: 23%;
+    background-color: rgb(209, 209, 209);
+}

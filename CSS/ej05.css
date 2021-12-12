@@ -1,17 +1,62 @@
 h1{
     background-color: black;
+    padding: 0.6em;
+    margin: 0;
+    margin-bottom: 10px;
 
 }
+
 span{
     color: white;
 }
-h2{
-    display: inline-block;
-    width: 49%;
+
+#subtitulos{
     background-color: gray;
 }
-li{
+
+h2:first-child{
+    padding-right: 45%;
+}
+
+h2{
     display: inline-block;
-    width: 23%;
-    background-color: rgb(209, 209, 209);
+}
+
+nav{
+    margin-top:10px;
+    background-color: rgb(206, 206, 206);
+}
+
+a{
+    padding: 10%;
+}
+
+#art1{
+    display: flex;
+    flex-direction: row;
+}
+
+.foto{
+    margin-top: 15px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+#art2{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    padding-left: 1em;
+}
+
+footer{
+    background-color: rgb(206, 206, 206);
+    padding: 0.6em;
+    margin-top: 10px;
 }

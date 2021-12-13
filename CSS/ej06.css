@@ -1,0 +1,35 @@
+h1{
+    background-color: cornflowerblue ;
+    padding: 0.6em;
+    margin: 0;
+    margin-bottom: 10px;
+}
+header{
+    margin-left: 0px;
+}
+span{
+    color: rgb(0, 145, 223);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+
+}
+nav{
+    background-color: rgb(208, 208, 208);
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    padding-right: 10rem;
+}
+article{
+    background-color: white;
+}
+.article1{
+    background-color: yellowgreen;
+}

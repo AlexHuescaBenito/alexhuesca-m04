@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<p id="demo"></p>
+
+<script>
+/*
+1.Genera una variable codigoSecreto de tipo array de 5 número aleatorios entre 1 y 10 usando la libreria Math.random();
+*/
+function generaterandomArray(){
+   var codigoSecreto = Array.from({length: 5}, () => Math.floor(Math.random() * 10)+1);
+    console.log(codigoSecreto)
+}
+generaterandomArray()
+
+
+/*
+2.Programa la función que te indique cuantas veces sale un número concreto (se lo podemos pedir al usuario) dentro del array.
+*/
+function getNumberCount(array,value){
+    var count = 0;  
+    array.forEach((v) => (v === value && count++));
+    return count;
+}
+
+/*
+3.Pide al usuario una posición de 1 a 5 y un número de 1 a 10. Crea una función que indique si ese número está o no en la posición indicada del array.
+*/
+
+function getPositionAndNumber(position, number){
+    var array = codigoSecreto
+    if (codigoSecreto.indexOf(position,number)=== array[i]){
+        return true
+    } else return false
+}
+
+function compareArrays(randomArray, userArray){
+    var array = codigoSecreto
+    var userArray = array.from({length:5})
+    for (value in userArray.length){
+            return true
+    }
+
+}
+
+function main(){
+    var randomArray = generaterandomArray
+    var userArray = array.from({length:5})
+    let position = prompt("Inserte una posición del 1 al 5:" + position);
+    let number = prompt("Inserte un número del 1 al 10:" + number);
+    userArray.add(number)
+    getNumberCount(userArray,number )
+    if (getPositionAndNumber === true){
+        console.log("Posición correcta")
+    }
+
+}
+
+</script>
+
+</body>
+</html>

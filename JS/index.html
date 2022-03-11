@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+   <link rel="stylesheet" text="text/css" href="css/style.css">
+   <title>Aprendiendo JavaScript Moderno</title>
+   <script>
+      alert("Hello world")
+      console.log("Buenos dias")
+      console.log("*VAR*");
+      var variable="Aprendiendo JavaScript";
+      console.log("Titulo ", variable);
+      variable= "21/02/2022";
+      console.log("Fecha ", variable);
+      variable= 2500;
+      console.log("Sueldo ", variable);
+
+      let nombre = "Alicia";
+      let apellidos = "Vazquez";
+      let profesion = "Profesora de informática"
+      let nya = nombre + " " + apellidos + "/n" + profesion;
+      console.log(nya)
+
+      function biggerNumber(numberOne,numberTwo){
+         if(numberOne<numberTwo){
+            return numberTwo
+         } else return numberOne
+      }
+      resultado = biggerNumber(6,8);
+      console.log("El número más grande es",resultado)
+
+      function multiplica(numberOne,numberTwo){
+         if(numberTwo==0){
+            return 0
+         }else{
+            return numberOne+multiplica(numberOne,numberTwo-1)
+         }
+      }
+      resultado = multiplica(8,8);
+      console.log("El resultado de la multiplicación es",resultado)
+      function multiplicaThree(numberOne,numberTwo,numberThree){
+         let number = multiplica(numberOne,numberTwo)
+         return multiplica(number,numberThree)
+      }
+      resultado = multiplicaThree(8,8,2);
+      console.log("El resultado de la multiplicación es",resultado)
+   </script>
+   <script src="scripts/01-PrimerosPasos.js"></script>
+</head>
+<body>
+   <h1>Aprendiendo JavaScript Moderno</h1>
+   <div id="contenedor"></div>
+</body>
+</html>

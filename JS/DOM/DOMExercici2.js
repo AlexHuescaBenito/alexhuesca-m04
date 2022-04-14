@@ -4,8 +4,8 @@ fitxer html. Fes que el fitxer .js prengui els valors del “nom” i “cognom�
 la consola del navegador.
 */
 function prenValorForm(){
-let form = document.getElementById("formulari1");
-let input = form.getElementsByTagName("input")
-let attr = input.getElementsByTagName
-console.log(attr)
+    let nom = document.getElementById("name").value;
+    let cognom = document.getElementById("surname").value;
+    document.write(nom+" "+cognom)
+    console.log(nom+" "+cognom)
 }   

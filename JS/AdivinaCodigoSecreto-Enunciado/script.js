@@ -9,10 +9,20 @@ function codigoSecreto() {
 }
 
 codigoSecreto();
+
 /*
 2.Comprobar si el número introducido es correcto
 */
-
-
-
-
+function Comprobar(){
+    let codigoUser = document.getElementById("codigo");
+    let row = document.getElementsByClassName("rowResult w100 flex wrap")
+    let cell = row[1].getElementsByClassName("w20")
+    for (let i = 0; i < row.length; i++){
+        for (i = 0; i < cell.length; i++){
+            if (cell[i]==codigoUser[i]){
+                cell[i].style.color = "green";
+            } 
+        
+        }
+    }
+}

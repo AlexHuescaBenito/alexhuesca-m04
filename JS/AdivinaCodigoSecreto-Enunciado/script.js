@@ -2,20 +2,6 @@ const codigo = [];
 const maxIntento = 7;
 let intentos = 0;
 
-function actualizaIntentos(){
-    if (intentos < maxIntento){
-        document.getElementById("info").innerText = "Te quedan " + (maxIntento - intentos + " intentos");
-    }
-    else {
-        document.getElementById("info").innerText = "Te queda " + maxIntento - intentos + " intento";
-        if (intentos == maxIntento){
-            document.getElementById("info").innerText = "Fin del juego. Has perdido bobo."
-            document.getElementById("check").disabled = true;
-        }
-    }
-    intentos++;
-    
-}
 
 /*1. Genera una constante CODIGO_SECRETO de tipo array de 5 número aleatorios entre 0 y 9 usando la libreria Math.random();*/
 function codigoSecreto() {
@@ -51,6 +37,36 @@ function Comprobar(){
     }
     actualizaIntentos()
 }
-codigoSecreto()
 
+/*
+2.Actualiza los intentos que te quedan para el final del juego
+*/
+
+function actualizaIntentos(){
+    let codigoUser = document.getElementById("numero").value;
+    let codUsr = codigoUser.split('').map(str => Number(str))
+    console.log(codUsr)
+    if (intentos < maxIntento){
+        document.getElementById("info").innerText = "Te quedan " + (maxIntento - intentos + " intentos");
+        if(JSON.stringify(codigo)==JSON.stringify(codUsr)){
+            document.getElementById("info").innerText = "Felicidades!!! Has acertado el código secreto!!!";
+            document.getElementById("section info").style.backgroundColor = "green";
+            document.getElementById("section info").style.borderColor = "green";
+            document.getElementById("check").disabled = true;
+            let showCells = document.getElementsByClassName("cel flex")
+            for (i=0; i<codigo.length; i++){
+                showCells[i].innerText = codigo[i];
+            }
+        }
+    }
+    else {
+        document.getElementById("info").innerText = "Te queda " + maxIntento - intentos + " intento";
+        if (intentos == maxIntento){
+            document.getElementById("info").innerText = "Fin del juego. Has perdido bobo."
+            document.getElementById("check").disabled = true;
+        }
+    }
+    intentos++;
+}
+codigoSecreto()
 console.log(codigo)
